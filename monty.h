@@ -38,8 +38,13 @@ typedef struct ar_s
 {
 	FILE *stream;
 	char *line;
+	unsigned int line_number;
+	char **tokens;
+	int n_tokens;
+	instruction_t  *instruction;
 } arg_t;
 extern arg_t *arguments;
-void correct_arguments(int argc)
+void correct_arguments(int argc);
+
 
 #endif
