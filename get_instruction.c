@@ -10,7 +10,7 @@ void get_instruction(void)
 		{"push", &push}, {"pop", &pop},
 		{"pint", &pint}, {"swap", &swap},
 		{"nop", &nop}, {"add", &add},
-		{"pall", &pall},
+		{"pall", &pall},{"sub", &sub},
 		{NULL, NULL}
 	};
 	/*checks if there are no tokens*/
