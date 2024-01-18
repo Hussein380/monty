@@ -19,7 +19,7 @@ void tokenize_line(void)
 		token = strtok(NULL, delims);
 	}
 
-	arguments->tokens = malloc(sizeof(char*) *
+	arguments->tokens = malloc(sizeof(char *) *
 			(arguments->n_tokens + 1));
 	strcpy(linecpy, arguments->line);
 	token = strtok(linecpy, delims);
