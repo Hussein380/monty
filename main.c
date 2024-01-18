@@ -1,4 +1,6 @@
 #include "monty.h"
+#include <stdio.h>
+arg_t *arguments = NULL;
 /**
  * main - entry point
  * @argc: the number of commandline arguments

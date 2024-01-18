@@ -1,4 +1,6 @@
+#define _GNU_SOURCE
 #include "monty.h"
+#include <stdio.h>
 #include <fcntl.h>
 
 /**
@@ -8,7 +10,7 @@
 
 void getting_stream_failed(char *fileName)
 {
-	dprintf(stderr, "Error: Can't open file %s\n", fileName);
+	fprintf(stderr, "Error: Can't open file %s\n", fileName);
 	free_arguments();
 	exit(EXIT_FAILURE);
 }

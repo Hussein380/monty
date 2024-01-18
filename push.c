@@ -1,4 +1,7 @@
+#define _GNU_SOURCE
 #include "monty.h"
+
+#include <stdio.h>
 /**
  * push - pushes an intager into the stack
  * @stack: pointer to the stack

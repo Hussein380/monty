@@ -1,4 +1,7 @@
+#define _GNU_SOURCE
 #include "monty.h"
+
+#include <stdio.h>
 /**
  * pint - prints the value at the top of the stack
  * @stack: pointer to the stack

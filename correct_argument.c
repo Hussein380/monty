@@ -1,4 +1,6 @@
+#define _GNU_SOURCE
 #include "monty.h"
+#include <stdio.h>
 /**
  * correct_arguments - checks for correct number of cmd
  * @argc: the number of cmd arguments

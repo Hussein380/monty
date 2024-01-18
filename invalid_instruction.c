@@ -1,4 +1,7 @@
+#define _GNU_SOURCE
 #include "monty.h"
+
+#include <stdio.h>
 /**
  * invalid_instruction - Handles  an unknown instruction error
  */
