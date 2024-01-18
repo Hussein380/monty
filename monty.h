@@ -38,8 +38,14 @@ typedef struct instruction_s
  * struct arg_s - hold variables
  * @stream: File that connects to the stream from file
  * @line: string which will be the line of text read from stream
+ * @line_number: line number when f is called
+ * @n_tokens: n_tokens
+ * @tokens: tokens
+ * @head: head of stack
+ * @stack_length: length of stack
+ * @instruction: instruction
  */
-typedef struct ar_s
+typedef struct arg_s
 {
 	FILE *stream;
 	char *line;
@@ -66,7 +72,7 @@ void push(stack_t **stack, unsigned int line_number);
 void malloc_failed(void);
 int is_number(char *str);
 void pall(stack_t **stack, unsigned int line_number);
-void free_arguments();
+void free_arguments(void);
 void free_head(void);
 void free_stack(stack_t *head);
 void free_all_args(void);
